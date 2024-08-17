@@ -33,7 +33,7 @@ public class Oven : BaseEnemy
         if(target != null && !isAttacking)
         {
             //Target is on the left
-            if(target.transform.position.x - transform.position.x < 0)
+            if(target.position.x - transform.position.x < 0)
             {
                 _flamethrowerCone.localPosition = new Vector2(-0.6f, 0);
                 _flamethrowerCone.localEulerAngles = new Vector3(0, 0, -90);
